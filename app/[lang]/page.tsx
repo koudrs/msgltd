@@ -47,13 +47,13 @@ function structuredData(locale: Locale, dict: Dictionary) {
         ],
         areaServed: "Worldwide",
         knowsAbout: [
-          "Aircraft transactions",
-          "Vessel and yacht brokerage",
+          "Business consulting",
+          "Commodities markets",
           "Premium real estate",
-          "Gold and precious metals",
-          "Oil and energy markets",
+          "Luxury assets",
           "Digital assets",
-          "Complex transaction advisory",
+          "E-commerce",
+          "Strategic advisory",
         ],
       },
       {
@@ -88,7 +88,7 @@ function structuredData(locale: Locale, dict: Dictionary) {
         parentOrganization: { "@id": "https://msgltd.net/#organization" },
         hasOfferCatalog: {
           "@type": "OfferCatalog",
-          name: locale === "es" ? "Mesas de asesoría" : "Advisory desks",
+          name: locale === "es" ? "Sectores" : "Sectors",
           itemListElement: dict.services.items.map((service) => ({
             "@type": "Offer",
             itemOffered: {

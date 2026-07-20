@@ -6,6 +6,7 @@ export const newsCategoryIds = [
   "oil",
   "gold",
   "crypto",
+  "ecommerce",
   "business",
 ] as const;
 
@@ -30,12 +31,14 @@ const searchQueries: Record<Locale, Record<Exclude<NewsCategoryId, "business">, 
     oil: '"oil prices" OR "crude oil" OR "brent crude"',
     gold: '"gold price" OR "gold market" OR "precious metals"',
     crypto: "cryptocurrency OR bitcoin OR ethereum",
+    ecommerce: '"e-commerce" OR "ecommerce" OR "online retail"',
   },
   es: {
     markets: '"bolsa de valores" OR "wall street" OR "mercados bursátiles"',
     oil: '"precio del petróleo" OR "petróleo brent" OR "crudo"',
     gold: '"precio del oro" OR "metales preciosos"',
     crypto: "criptomonedas OR bitcoin OR ethereum",
+    ecommerce: '"comercio electrónico" OR "e-commerce" OR "ventas online"',
   },
 };
 

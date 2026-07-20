@@ -6,13 +6,14 @@ const categoryTag: Record<string, string> = {
   oil: "OIL",
   gold: "AU",
   crypto: "BTC",
+  ecommerce: "ECM",
   business: "BIZ",
 };
 
 async function tickerItems(locale: Locale) {
   const pools = await Promise.all(
-    (["markets", "oil", "gold", "crypto"] as const).map((category) =>
-      getNews(category, locale, 4),
+    (["markets", "oil", "gold", "crypto", "ecommerce"] as const).map(
+      (category) => getNews(category, locale, 4),
     ),
   );
   const interleaved: NewsItem[] = [];

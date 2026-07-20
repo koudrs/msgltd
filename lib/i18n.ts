@@ -51,7 +51,10 @@ export interface Dictionary {
     eyebrow: string;
     heading: string;
     sub: string;
-    tabs: Record<"markets" | "oil" | "gold" | "crypto" | "business", string>;
+    tabs: Record<
+      "markets" | "oil" | "gold" | "crypto" | "ecommerce" | "business",
+      string
+    >;
     tablistAria: string;
     empty: string;
     readAtSource: string;
@@ -97,22 +100,20 @@ const en: Dictionary = {
   meta: {
     title: "Middleton Services Group LTD — Making the Markets Accessible",
     description:
-      "Independent advisory firm for complex, high-value transactions: aircraft, vessels, premium real estate, gold and precious metals, oil and energy, and digital assets. Discreet facilitation from Miami and Panama City, operating globally.",
+      "Middleton Services Group LTD is a private business consulting firm engaged in the world's strongest markets: commodities, premium real estate, luxury assets, digital assets, and e-commerce. Miami and Panama City, operating globally.",
     ogDescription:
-      "Independent advisory for complex, high-value transactions: aircraft, vessels, premium real estate, gold, oil and energy, and digital assets. Miami · Panama City · Global.",
+      "Private business consulting engaged in the world's strongest markets: commodities, premium real estate, luxury assets, digital assets, and e-commerce. Miami · Panama City · Global.",
     keywords: [
-      "complex transaction advisory",
-      "aircraft sales facilitation",
-      "vessel brokerage",
-      "premium real estate transactions",
-      "gold trading advisory",
-      "precious metals transactions",
-      "oil and energy deals",
-      "commodity transaction facilitation",
-      "digital asset advisory",
-      "high-value asset sales",
-      "business advisory Miami",
-      "business advisory Panama",
+      "private business consulting",
+      "business consulting Miami",
+      "business consulting Panama",
+      "strategic advisory",
+      "commodities",
+      "premium real estate",
+      "luxury assets",
+      "digital assets",
+      "e-commerce",
+      "high-value markets",
       "Middleton Services Group",
     ],
   },
@@ -125,126 +126,115 @@ const en: Dictionary = {
     openMenu: "Open menu",
   },
   hero: {
-    eyebrow:
-      "Middleton Services Group LTD — Independent transaction advisory",
+    eyebrow: "Middleton Services Group LTD — Private business consulting",
     line1: "Making the",
     markWord: "markets",
     line3: "accessible.",
-    sub: "Some assets don't fit the standard playbook — an aircraft, a vessel, an estate, a position in gold or crude. We bring order, discretion, and the right counterparties to transactions others find too complex.",
+    sub: "A private consulting firm with an active presence in the world's strongest markets — commodities, premium real estate, luxury assets, digital assets, and e-commerce. Discreet, connected, and open for serious business.",
     ctaPrimary: "Start a conversation",
-    ctaSecondary: "What we handle",
-    assetIndexTitle: "Asset index",
+    ctaSecondary: "Where we operate",
+    assetIndexTitle: "Sector index",
     assets: [
-      { code: "AVN", name: "Aircraft", note: "Acquisition & disposal" },
-      { code: "MRT", name: "Vessels", note: "Commercial & private" },
-      { code: "RES", name: "Estates", note: "Premium property" },
-      { code: "CMD", name: "Bullion", note: "Gold & precious metals" },
-      { code: "ENR", name: "Energy", note: "Crude & refined products" },
-      { code: "DGA", name: "Digital assets", note: "Regulated markets" },
+      { code: "CMD", name: "Commodities", note: "Physical markets" },
+      { code: "RES", name: "Real Estate", note: "Prime property" },
+      { code: "LUX", name: "Luxury Assets", note: "Rare & coveted" },
+      { code: "DGA", name: "Digital Assets", note: "Regulated value" },
+      { code: "ECM", name: "E-Commerce", note: "Digital trade" },
     ],
   },
   ticker: {
     aria: "Live market headlines",
     fallback: [
-      { tag: "BIZ", title: "Aviation · Maritime · Estates · Bullion · Energy" },
+      {
+        tag: "BIZ",
+        title:
+          "Commodities · Real Estate · Luxury Assets · Digital Assets · E-Commerce",
+      },
       { tag: "MKT", title: "Making the Markets Accessible" },
       {
         tag: "BIZ",
-        title: "Independent transaction advisory — Miami · Panama City",
+        title: "Private business consulting — Miami · Panama City",
       },
     ],
   },
   about: {
     eyebrow: "About us",
-    heading: "A partner for transactions that don't fit the standard playbook.",
+    heading: "We don't observe markets. We operate inside them.",
     paragraphs: [
-      "Middleton Services Group is an independent advisory firm built around one idea: the most interesting markets are the hardest to enter. An aircraft, a commercial vessel, a landmark estate, a position in bullion or crude — these assets move through private channels, between people who know each other.",
-      "We open those channels. We help owners bring exceptional assets to market, connect capital with opportunity, and stand between parties when a transaction needs a steady, neutral hand. Not a marketplace, not a fund — a firm that solves the deal in front of it.",
-      "Our work is quiet by design. What our clients share is a situation most firms would call too complex, and what they get back is a path to done.",
+      "Middleton Services Group is a private business consulting firm built on one conviction: the most interesting markets are the hardest to enter. Commodities, premium property, luxury assets, digital value, global commerce — the serious side of these worlds moves in private circles, between people who know each other.",
+      "We are in those circles. We study markets, identify serious ventures, and involve ourselves where judgment, structure, and discretion make the difference. We are not a marketplace, not a fund, and not an intermediary — we are a firm that does business, at the level where business is done.",
+      "Our work is quiet by design. What reaches us is an opportunity; what we bring is presence, experience, and a network built over decades.",
     ],
     principles: [
       {
         term: "Discretion",
         detail:
-          "High-value transactions attract attention. We keep every mandate confidential from first contact to closing — and beyond.",
+          "Serious business attracts attention. Every engagement stays confidential from the first conversation onward — and after.",
       },
       {
         term: "Network",
         detail:
-          "Decades of relationships across aviation, maritime, property, commodities, and energy. When a deal needs a counterparty, we usually know where to look.",
+          "Decades of relationships across commodities, property, luxury, and digital markets. When something serious is moving, we usually hear about it early.",
       },
       {
         term: "Execution",
         detail:
-          "A deal is only as good as its closing. We manage process, verification, and pace so complexity never becomes an excuse.",
+          "We see every engagement through. Process, verification, pace — complexity is never an excuse.",
       },
     ],
   },
   services: {
     eyebrow: "Services",
-    heading: "Every asset class is a market. We know our way around these.",
-    sub: "Seven desks, one method: understand the asset, verify the parties, structure the path, close. Mandates are taken on a case-by-case basis.",
+    heading: "Five markets are booming. We are active in all of them.",
+    sub: "One discipline across every sector: understand the market, know the players, engage with discretion. Engagements are considered case by case.",
     items: [
       {
-        id: "aviation",
-        code: "AVN",
-        title: "Aviation",
+        id: "commodities",
+        code: "CMD",
+        title: "Commodities",
         description:
-          "Aircraft rarely change hands quickly. We manage the full arc of an aircraft transaction — valuation, positioning, counterparties, and closing — so owners and buyers move with confidence.",
-      },
-      {
-        id: "maritime",
-        code: "MRT",
-        title: "Maritime",
-        description:
-          "Commercial vessels and private yachts trade in a narrow, relationship-driven market. We bring the right parties to the table and keep the transaction on course.",
+          "Energy, metals, and the staples the world runs on. These markets never sleep — and neither does our attention. We keep an active presence where the world's fundamentals are decided.",
       },
       {
         id: "real-estate",
         code: "RES",
         title: "Premium Real Estate",
         description:
-          "Exceptional properties don't sell through listings. We arrange discreet introductions between principals for estates and landmark assets that require a private market.",
+          "Real estate never dies. Prime property holds its value through every cycle, and we stay engaged in the markets — and the ventures — where it matters most.",
       },
       {
-        id: "commodities",
-        code: "CMD",
-        title: "Gold & Precious Metals",
+        id: "luxury-assets",
+        code: "LUX",
+        title: "Luxury Assets",
         description:
-          "Bullion and precious metals transactions demand verified counterparties and clean procedure. We structure the process end to end, with compliance at the center.",
-      },
-      {
-        id: "energy",
-        code: "ENR",
-        title: "Oil & Energy",
-        description:
-          "Crude, refined products, and energy assets move through complex channels. We help principals navigate sourcing, verification, and execution in a market built on trust.",
+          "A world of rare and coveted things that moves on trust and access. We are at home in it — quietly, and at the highest level.",
       },
       {
         id: "digital-assets",
         code: "DGA",
         title: "Digital Assets",
         description:
-          "Regulated digital assets call for the same discipline as any other market: verified counterparties, sound custody, clean settlement. We help principals move between traditional and digital value with confidence.",
+          "Digital value has grown a professional class — regulated, institutional, and here to stay. We engage where discipline meets opportunity.",
       },
       {
-        id: "advisory",
-        code: "ADV",
-        title: "Business Advisory",
+        id: "ecommerce",
+        code: "ECM",
+        title: "E-Commerce",
         description:
-          "Some deals don't fit any category. When a transaction stalls or a market seems closed, we find the structure — and the people — that make it possible.",
+          "Commerce has moved online and keeps compounding. We stay close to the platforms, the operators, and the ventures defining digital trade.",
       },
     ],
   },
   news: {
     eyebrow: "News",
     heading: "What the markets are doing, right now.",
-    sub: "Stocks, oil, gold, crypto, and global business — curated from the world's financial press and refreshed throughout the day. The same feeds our desks read.",
+    sub: "Stocks, oil, gold, crypto, e-commerce, and global business — curated from the world's financial press and refreshed throughout the day. The markets we live in.",
     tabs: {
       markets: "Stock Markets",
       oil: "Oil & Energy",
       gold: "Gold & Metals",
       crypto: "Crypto",
+      ecommerce: "E-Commerce",
       business: "Business",
     },
     tablistAria: "News categories",
@@ -253,8 +243,8 @@ const en: Dictionary = {
   },
   contact: {
     eyebrow: "Contact",
-    heading: "Bring us the complex one.",
-    sub: "Tell us what you're working with — an asset, a market, a deal that stalled. First conversations are informal and always confidential.",
+    heading: "Open for business.",
+    sub: "Tell us what you're working on — a market, a venture, an idea that needs the right people around it. First conversations are informal and always confidential.",
     emailLabel: "Email",
     officesLabel: "Offices",
     offices: ["Miami, Florida, United States", "Panama City, Panama"],
@@ -266,11 +256,11 @@ const en: Dictionary = {
       namePlaceholder: "Jordan Reyes",
       email: "Email",
       emailPlaceholder: "you@company.com",
-      sector: "Asset or sector",
-      sectorPlaceholder: "e.g. Aircraft, gold, energy, property",
+      sector: "Sector",
+      sectorPlaceholder: "e.g. Commodities, real estate, e-commerce",
       message: "Message",
       messagePlaceholder:
-        "A few lines about the situation. No detail is too early — or too late.",
+        "A few lines about what you have in mind. No detail is too early — or too late.",
       submit: "Send message",
       sending: "Sending…",
       success: "Message sent. We'll get back to you shortly.",
@@ -279,20 +269,18 @@ const en: Dictionary = {
   },
   footer: {
     navigate: "Navigate",
-    desks: "Desks",
+    desks: "Sectors",
     deskItems: [
-      "Aviation",
-      "Maritime",
+      "Commodities",
       "Premium Real Estate",
-      "Gold & Precious Metals",
-      "Oil & Energy",
+      "Luxury Assets",
       "Digital Assets",
-      "Business Advisory",
+      "E-Commerce",
     ],
     officesLabel: "Offices",
     offices: ["Miami, Florida, United States", "Panama City, Panama"],
     blurb:
-      "Independent advisory for complex, high-value transactions. Operating globally.",
+      "Private business consulting engaged in high-value markets. Operating globally.",
     rights: "All rights reserved.",
     developedBy: "Developed by",
     footerAria: "Footer",
@@ -303,20 +291,20 @@ const es: Dictionary = {
   meta: {
     title: "Middleton Services Group LTD — Making the Markets Accessible",
     description:
-      "Firma independiente de asesoría para transacciones complejas de alto valor: aeronaves, embarcaciones, bienes raíces premium, oro y metales preciosos, petróleo y energía, y activos digitales. Facilitación discreta desde Miami y Ciudad de Panamá, con operación global.",
+      "Middleton Services Group LTD es una consultoría privada de negocios con presencia activa en los mercados más fuertes del mundo: commodities, bienes raíces premium, activos de lujo, activos digitales y e-commerce. Miami y Ciudad de Panamá, con operación global.",
     ogDescription:
-      "Asesoría independiente para transacciones complejas de alto valor: aeronaves, embarcaciones, bienes raíces premium, oro, petróleo y energía, y activos digitales. Miami · Ciudad de Panamá · Global.",
+      "Consultoría privada de negocios con presencia en los mercados más fuertes del mundo: commodities, bienes raíces premium, activos de lujo, activos digitales y e-commerce. Miami · Ciudad de Panamá · Global.",
     keywords: [
-      "asesoría de transacciones complejas",
-      "venta de aeronaves",
-      "compraventa de embarcaciones",
-      "bienes raíces de lujo",
-      "oro y metales preciosos",
-      "petróleo y energía",
+      "consultoría privada de negocios",
+      "consultoría de negocios Miami",
+      "consultoría de negocios Panamá",
+      "asesoría estratégica",
       "commodities",
+      "bienes raíces premium",
+      "activos de lujo",
       "activos digitales",
-      "asesoría de negocios Miami",
-      "asesoría de negocios Panamá",
+      "e-commerce",
+      "mercados de alto valor",
       "Middleton Services Group",
     ],
   },
@@ -329,22 +317,20 @@ const es: Dictionary = {
     openMenu: "Abrir menú",
   },
   hero: {
-    eyebrow:
-      "Middleton Services Group LTD — Asesoría independiente de transacciones",
+    eyebrow: "Middleton Services Group LTD — Consultoría privada de negocios",
     line1: "Hacemos los",
     markWord: "mercados",
     line3: "accesibles.",
-    sub: "Hay activos que no caben en el manual — una aeronave, una embarcación, una propiedad excepcional, una posición en oro o crudo. Aportamos orden, discreción y las contrapartes correctas a transacciones que otros consideran demasiado complejas.",
+    sub: "Una consultoría privada con presencia activa en los mercados más fuertes del mundo — commodities, bienes raíces premium, activos de lujo, activos digitales y e-commerce. Discretos, conectados y abiertos a negocios serios.",
     ctaPrimary: "Iniciar la conversación",
-    ctaSecondary: "Qué manejamos",
-    assetIndexTitle: "Índice de activos",
+    ctaSecondary: "Dónde operamos",
+    assetIndexTitle: "Índice de sectores",
     assets: [
-      { code: "AVN", name: "Aeronaves", note: "Compra y venta" },
-      { code: "MRT", name: "Embarcaciones", note: "Comerciales y privadas" },
-      { code: "RES", name: "Propiedades", note: "Inmuebles premium" },
-      { code: "CMD", name: "Metales", note: "Oro y metales preciosos" },
-      { code: "ENR", name: "Energía", note: "Crudo y refinados" },
-      { code: "DGA", name: "Activos digitales", note: "Mercados regulados" },
+      { code: "CMD", name: "Commodities", note: "Mercados físicos" },
+      { code: "RES", name: "Bienes Raíces", note: "Propiedad prime" },
+      { code: "LUX", name: "Activos de Lujo", note: "Escasos y codiciados" },
+      { code: "DGA", name: "Activos Digitales", note: "Valor regulado" },
+      { code: "ECM", name: "E-Commerce", note: "Comercio digital" },
     ],
   },
   ticker: {
@@ -352,106 +338,94 @@ const es: Dictionary = {
     fallback: [
       {
         tag: "BIZ",
-        title: "Aviación · Marítimo · Propiedades · Metales · Energía",
+        title:
+          "Commodities · Bienes Raíces · Activos de Lujo · Activos Digitales · E-Commerce",
       },
       { tag: "MKT", title: "Making the Markets Accessible" },
       {
         tag: "BIZ",
-        title: "Asesoría independiente de transacciones — Miami · Ciudad de Panamá",
+        title: "Consultoría privada de negocios — Miami · Ciudad de Panamá",
       },
     ],
   },
   about: {
     eyebrow: "Nosotros",
-    heading: "Un socio para transacciones que no siguen el manual estándar.",
+    heading: "No observamos los mercados. Operamos dentro de ellos.",
     paragraphs: [
-      "Middleton Services Group es una firma independiente de asesoría construida sobre una idea: los mercados más interesantes son los más difíciles de entrar. Una aeronave, un buque comercial, una propiedad emblemática, una posición en oro o crudo — estos activos se mueven por canales privados, entre gente que se conoce.",
-      "Nosotros abrimos esos canales. Ayudamos a propietarios a llevar activos excepcionales al mercado, conectamos capital con oportunidad y actuamos como mano neutral cuando una transacción necesita firmeza. No somos un marketplace ni un fondo — somos una firma que resuelve la operación que tiene enfrente.",
-      "Nuestro trabajo es silencioso por diseño. Lo que nuestros clientes comparten es una situación que la mayoría llamaría demasiado compleja; lo que reciben de vuelta es un camino al cierre.",
+      "Middleton Services Group es una consultoría privada de negocios construida sobre una convicción: los mercados más interesantes son los más difíciles de entrar. Commodities, propiedad premium, activos de lujo, valor digital, comercio global — el lado serio de estos mundos se mueve en círculos privados, entre gente que se conoce.",
+      "Nosotros estamos en esos círculos. Estudiamos mercados, identificamos negocios serios y nos involucramos donde el criterio, la estructura y la discreción hacen la diferencia. No somos un marketplace, no somos un fondo y no somos intermediarios — somos una firma que hace negocios, al nivel donde se hacen los negocios.",
+      "Nuestro trabajo es silencioso por diseño. Lo que nos llega es una oportunidad; lo que ponemos sobre la mesa es presencia, experiencia y una red construida durante décadas.",
     ],
     principles: [
       {
         term: "Discreción",
         detail:
-          "Las transacciones de alto valor atraen atención. Mantenemos cada mandato confidencial desde el primer contacto hasta el cierre — y después.",
+          "Los negocios serios atraen atención. Cada compromiso se mantiene confidencial desde la primera conversación — y después.",
       },
       {
         term: "Red",
         detail:
-          "Décadas de relaciones en aviación, marítimo, propiedades, commodities y energía. Cuando una operación necesita contraparte, normalmente sabemos dónde buscar.",
+          "Décadas de relaciones en commodities, propiedad, lujo y mercados digitales. Cuando algo serio se está moviendo, normalmente nos enteramos temprano.",
       },
       {
         term: "Ejecución",
         detail:
-          "Una operación vale lo que vale su cierre. Gestionamos proceso, verificación y ritmo para que la complejidad nunca sea excusa.",
+          "Llevamos cada compromiso hasta el final. Proceso, verificación, ritmo — la complejidad nunca es excusa.",
       },
     ],
   },
   services: {
     eyebrow: "Servicios",
-    heading: "Cada clase de activo es un mercado. Estos los conocemos bien.",
-    sub: "Siete mesas, un método: entender el activo, verificar las partes, estructurar el camino, cerrar. Los mandatos se aceptan caso por caso.",
+    heading: "Cinco mercados están en auge. Estamos activos en todos.",
+    sub: "Una disciplina en todos los sectores: entender el mercado, conocer a los jugadores, involucrarse con discreción. Los compromisos se evalúan caso por caso.",
     items: [
       {
-        id: "aviation",
-        code: "AVN",
-        title: "Aviación",
+        id: "commodities",
+        code: "CMD",
+        title: "Commodities",
         description:
-          "Una aeronave rara vez cambia de manos rápido. Gestionamos el arco completo de la transacción — valuación, posicionamiento, contrapartes y cierre — para que propietarios y compradores avancen con confianza.",
-      },
-      {
-        id: "maritime",
-        code: "MRT",
-        title: "Marítimo",
-        description:
-          "Los buques comerciales y yates privados se negocian en un mercado estrecho, de relaciones. Sentamos a las partes correctas en la mesa y mantenemos la transacción en curso.",
+          "Energía, metales y las materias primas que mueven al mundo. Estos mercados nunca duermen — y nuestra atención tampoco. Mantenemos presencia activa donde se deciden los fundamentos.",
       },
       {
         id: "real-estate",
         code: "RES",
         title: "Bienes Raíces Premium",
         description:
-          "Las propiedades excepcionales no se venden por listados. Organizamos presentaciones discretas entre principales para propiedades y activos emblemáticos que requieren un mercado privado.",
+          "El real estate nunca muere. La propiedad prime sostiene su valor en cada ciclo, y nosotros seguimos involucrados en los mercados — y los negocios — donde más importa.",
       },
       {
-        id: "commodities",
-        code: "CMD",
-        title: "Oro y Metales Preciosos",
+        id: "luxury-assets",
+        code: "LUX",
+        title: "Activos de Lujo",
         description:
-          "Las transacciones de oro y metales preciosos exigen contrapartes verificadas y un procedimiento limpio. Estructuramos el proceso de punta a punta, con el cumplimiento en el centro.",
-      },
-      {
-        id: "energy",
-        code: "ENR",
-        title: "Petróleo y Energía",
-        description:
-          "El crudo, los refinados y los activos energéticos se mueven por canales complejos. Ayudamos a los principales a navegar el abastecimiento, la verificación y la ejecución en un mercado construido sobre la confianza.",
+          "Un mundo de piezas escasas y codiciadas que se mueve por confianza y acceso. En él estamos en casa — con discreción y al más alto nivel.",
       },
       {
         id: "digital-assets",
         code: "DGA",
         title: "Activos Digitales",
         description:
-          "Los activos digitales regulados exigen la misma disciplina que cualquier otro mercado: contrapartes verificadas, custodia sólida y liquidación limpia. Ayudamos a los principales a moverse entre el valor tradicional y el digital con confianza.",
+          "El valor digital ya tiene una capa profesional — regulada, institucional y aquí para quedarse. Nos involucramos donde la disciplina encuentra oportunidad.",
       },
       {
-        id: "advisory",
-        code: "ADV",
-        title: "Asesoría de Negocios",
+        id: "ecommerce",
+        code: "ECM",
+        title: "E-Commerce",
         description:
-          "Hay operaciones que no caben en ninguna categoría. Cuando una transacción se estanca o un mercado parece cerrado, encontramos la estructura — y las personas — que la hacen posible.",
+          "El comercio se mudó a internet y no deja de crecer. Estamos cerca de las plataformas, los operadores y los negocios que definen el comercio digital.",
       },
     ],
   },
   news: {
     eyebrow: "Noticias",
     heading: "Qué están haciendo los mercados, ahora mismo.",
-    sub: "Bolsa, petróleo, oro, cripto y negocios globales — curado de la prensa financiera mundial y actualizado durante el día. Los mismos feeds que leen nuestras mesas.",
+    sub: "Bolsa, petróleo, oro, cripto, e-commerce y negocios globales — curado de la prensa financiera mundial y actualizado durante el día. Los mercados en los que vivimos.",
     tabs: {
       markets: "Bolsa de Valores",
       oil: "Petróleo y Energía",
       gold: "Oro y Metales",
       crypto: "Cripto",
+      ecommerce: "E-Commerce",
       business: "Negocios",
     },
     tablistAria: "Categorías de noticias",
@@ -460,8 +434,8 @@ const es: Dictionary = {
   },
   contact: {
     eyebrow: "Contacto",
-    heading: "Tráenos la difícil.",
-    sub: "Cuéntanos con qué estás trabajando — un activo, un mercado, una operación estancada. Las primeras conversaciones son informales y siempre confidenciales.",
+    heading: "Abiertos a negocios.",
+    sub: "Cuéntanos en qué estás trabajando — un mercado, un negocio, una idea que necesita a la gente correcta alrededor. Las primeras conversaciones son informales y siempre confidenciales.",
     emailLabel: "Correo",
     officesLabel: "Oficinas",
     offices: ["Miami, Florida, Estados Unidos", "Ciudad de Panamá, Panamá"],
@@ -473,11 +447,11 @@ const es: Dictionary = {
       namePlaceholder: "Jordan Reyes",
       email: "Correo",
       emailPlaceholder: "tu@empresa.com",
-      sector: "Activo o sector",
-      sectorPlaceholder: "p. ej. aeronave, oro, energía, propiedad",
+      sector: "Sector",
+      sectorPlaceholder: "p. ej. commodities, bienes raíces, e-commerce",
       message: "Mensaje",
       messagePlaceholder:
-        "Unas líneas sobre la situación. Ningún detalle llega demasiado temprano — ni demasiado tarde.",
+        "Unas líneas sobre lo que tienes en mente. Ningún detalle llega demasiado temprano — ni demasiado tarde.",
       submit: "Enviar mensaje",
       sending: "Enviando…",
       success: "Mensaje enviado. Te responderemos a la brevedad.",
@@ -486,20 +460,18 @@ const es: Dictionary = {
   },
   footer: {
     navigate: "Navegar",
-    desks: "Mesas",
+    desks: "Sectores",
     deskItems: [
-      "Aviación",
-      "Marítimo",
+      "Commodities",
       "Bienes Raíces Premium",
-      "Oro y Metales Preciosos",
-      "Petróleo y Energía",
+      "Activos de Lujo",
       "Activos Digitales",
-      "Asesoría de Negocios",
+      "E-Commerce",
     ],
     officesLabel: "Oficinas",
     offices: ["Miami, Florida, Estados Unidos", "Ciudad de Panamá, Panamá"],
     blurb:
-      "Asesoría independiente para transacciones complejas de alto valor. Operación global.",
+      "Consultoría privada de negocios con presencia en mercados de alto valor. Operación global.",
     rights: "Todos los derechos reservados.",
     developedBy: "Desarrollado por",
     footerAria: "Pie de página",

@@ -1,12 +1,12 @@
 # Middleton Services Group LTD (msgltd.net)
 
 ## Project Overview
-One-page portal for Middleton Services Group LTD — an independent advisory firm for complex, high-value transactions (aircraft, vessels, premium real estate, gold/precious metals, oil/energy, digital assets).
+One-page portal for Middleton Services Group LTD — a **private business consulting firm** engaged in five booming markets: Commodities, Premium Real Estate, Luxury Assets, Digital Assets, E-Commerce.
 
 **Slogan:** Making the Markets Accessible
 **Offices:** Miami, FL 33166 (US) · Panama City, Panama — NOT United Kingdom (early copy had UK by mistake; client corrected it)
 
-**Positioning rule (from client):** the site must *imply* three things — we sell, we connect capital, we intermediate — without ever saying "broker", "for sale", or "seeking investors". Copy reads as "a firm that solves complex deals".
+**Positioning rule (client, revised 2026-07-20 — STRICT):** the firm does NOT buy, sell, trade, or intermediate — and the copy must never suggest it does (no "broker", "transactions", "counterparties", "acquisition & disposal", "bring assets to market", "connect capital"). Frame: a consulting firm that *engages in / operates inside* high-value markets ("nos metemos en negocios grandes"). Also: never enumerate concrete luxury items (aircraft, yachts, horses, jewelry, art) — use the umbrella term **Luxury Assets**. Umbrella terms are the rule: Commodities (covers oil/gold/sugar/energy), Digital Assets (covers crypto), E-Commerce, Premium Real Estate, Luxury Assets. Terminology was proposed to the client for sign-off before launch.
 
 ## Tech Stack
 - Next.js 16 (App Router, Turbopack), TypeScript, Tailwind CSS v4
@@ -17,7 +17,7 @@ One-page portal for Middleton Services Group LTD — an independent advisory fir
 - **Palette:** Signal Yellow `#ffd400` (primary), Ink `#101010`, White, Fog `#f4f4f2`, hairlines `#e4e4e1`. Tokens in `app/globals.css` (hex, not oklch).
 - **Type:** Schibsted Grotesk (display, `font-heading`), Inter (body), Geist Mono (`font-mono` — eyebrows, ticker codes, metadata). Wired via next/font in `app/layout.tsx`.
 - **Language:** mono uppercase eyebrows, hairline rules, sharp corners (`--radius: 0.25rem`, buttons often `rounded-none`), yellow used sparingly as signal.
-- **Structural device:** services carry ticker symbols (AVN, MRT, RES, CMD, ENR, DGA, ADV) — "every asset class is a market". Seven desks; hero asset index and services list must stay in sync.
+- **Structural device:** sectors carry ticker symbols (CMD, RES, LUX, DGA, ECM) — "every sector is a market". Five sectors (client: "los cinco negocios boomin", E-Commerce last); hero sector index, services list, and footer must stay in sync.
 - **Section naming:** the news section is called "News"/"Noticias" (client explicitly rejected "Market Watch").
 - **Signature element:** live news ticker (black band, real headlines) under the hero.
 
@@ -29,7 +29,7 @@ One-page portal for Middleton Services Group LTD — an independent advisory fir
 - News feeds are ALSO localized: `/es` pulls Spanish-language Google News feeds (`hl=es-419`).
 
 ## News Engine (client's #1 feature)
-- `lib/news.ts` — fetches Google News RSS per category (markets, oil, gold, crypto, business) and per locale, parses with fast-xml-parser, dedupes, strips " - Source" suffixes. Each fetch: `next: { revalidate: 900 }`.
+- `lib/news.ts` — fetches Google News RSS per category (markets, oil, gold, crypto, ecommerce, business) and per locale, parses with fast-xml-parser, dedupes, strips " - Source" suffixes. Each fetch: `next: { revalidate: 900 }`.
 - Page-level `export const revalidate = 900` in `app/[lang]/page.tsx` (ISR every 15 min).
 - `components/sections/market-watch.tsx` (server, fetches all categories in parallel) → `news-tabs.tsx` (client tabs, no client fetching; relative times precomputed server-side to avoid hydration mismatch, localized "2h ago"/"hace 2 h").
 - `components/sections/ticker.tsx` — CSS marquee (`.animate-ticker` in globals.css), paused on hover, disabled under reduced motion.

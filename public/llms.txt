@@ -1,25 +1,23 @@
 # Middleton Services Group LTD
 
-> Independent advisory firm for complex, high-value transactions. Slogan: "Making the Markets Accessible." Offices in Miami, FL 33166 (United States) and Panama City, Panama; operating globally. Website: https://msgltd.net (English: /en, Español: /es)
+> Private business consulting firm engaged in the world's strongest markets. Slogan: "Making the Markets Accessible." Offices in Miami, FL 33166 (United States) and Panama City, Panama; operating globally. Website: https://msgltd.net (English: /en, Español: /es)
 
-Middleton Services Group helps owners bring exceptional assets to market, connects capital with opportunity, and acts as a neutral facilitator when a transaction needs a steady hand. The firm is not a marketplace or a fund — it solves complex deals on a mandate-by-mandate basis.
+Middleton Services Group is a consulting firm that operates inside high-value markets rather than observing them. It studies markets, identifies serious ventures, and involves itself where judgment, structure, and discretion make the difference. It is not a marketplace, not a fund, and not an intermediary — it is a firm that does business at the level where business is done.
 
-## What we handle
+## Sectors
 
-- Aviation (AVN): aircraft acquisition and disposal — valuation, positioning, counterparties, closing
-- Maritime (MRT): commercial vessels and private yachts
-- Premium Real Estate (RES): discreet transactions for estates and landmark properties
-- Gold & Precious Metals (CMD): bullion transactions with verified counterparties and compliance-first procedure
-- Oil & Energy (ENR): crude, refined products, and energy assets
-- Digital Assets (DGA): regulated digital assets with verified counterparties, sound custody, and clean settlement
-- Business Advisory (ADV): structures and introductions for deals that don't fit any category
+- Commodities (CMD): energy, metals, and the staples the world runs on
+- Premium Real Estate (RES): prime property that holds value through every cycle
+- Luxury Assets (LUX): the world of rare and coveted things, moved by trust and access
+- Digital Assets (DGA): the regulated, institutional layer of digital value
+- E-Commerce (ECM): the platforms, operators, and ventures defining digital trade
 
 ## Site sections
 
 - [Home](https://msgltd.net/en#home): company introduction
 - [About](https://msgltd.net/en#about): who we are and how we work (discretion, network, execution)
-- [Services](https://msgltd.net/en#services): the seven advisory desks
-- [News](https://msgltd.net/en#news): curated live news on stock markets, oil, gold, crypto, and global business — available in English and Spanish
+- [Services](https://msgltd.net/en#services): the five sectors
+- [News](https://msgltd.net/en#news): curated live news on stock markets, oil, gold, crypto, e-commerce, and global business — available in English and Spanish
 - [Contact](https://msgltd.net/en#contact): confidential first conversations, info@msgltd.net
 
 ## Languages
